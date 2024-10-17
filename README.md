@@ -1,29 +1,42 @@
 # Java--Memory-Game
 By Marc
 
-Projektbeschreibung:
+### README
 
-Dieses Projekt simuliert das klassische Memory-Spiel in der Programmiersprache Java. Es besteht aus mehreren Klassen, die das Spiel strukturiert aufbauen und es ermöglichen, Karten zu flippen, Übereinstimmungen zu suchen und den Spielstand zu verfolgen.
-Projektstruktur:
+#### Project Description:
 
-    Card: Eine Klasse, die eine einzelne Karte mit einem Symbol repräsentiert. Jede Karte kann "face up" oder "face down" sein und hat ein Symbol.
-    Board: Das Spielfeld, das die Karten verwaltet und die Logik zur Überprüfung von Übereinstimmungen bereitstellt.
-    Player: Repräsentiert einen Spieler und verfolgt dessen Punkte.
-    MemoryGame: Die Hauptlogik des Spiels, die Spieleraktionen verarbeitet und den Spielstatus kontrolliert.
-    Main: Startpunkt des Programms. Hier wird das Spiel initialisiert und gestartet.
+This project simulates the classic Memory Game in Java. It consists of several classes that structure the game, allowing players to flip cards, check for matches, and track the score.
 
-Wie man das Spiel ausführt:
+#### Project Structure:
 
-    Kompiliere alle Java-Dateien:
+- **Card**: A class representing a single card with a symbol. Each card can be "face up" or "face down" and has a symbol.
+- **Board**: The game board, which manages the cards and provides logic to check for matches.
+- **Player**: Represents a player and keeps track of their score.
+- **MemoryGame**: The main logic of the game that processes player actions and controls the game state.
+- **Main**: The entry point of the program where the game is initialized and started.
 
-    bash
+#### How to Run the Game:
 
-javac *.java
+1. Compile all Java files:
+   ```bash
+   javac *.java
+   ```
 
-Führe das Programm aus:
+2. Run the program:
+   ```bash
+   java Main
+   ```
 
-bash
+3. Follow the instructions in the terminal to play the Memory Game.
 
-java Main
+#### Gameplay Overview:
 
-Folge den Anweisungen im Terminal, um das Memory-Spiel zu spielen.
+- Players will take turns selecting two cards to flip.
+- If the symbols on both cards match, the player earns a point, and the cards remain face up.
+- If the symbols do not match, the cards are flipped back face down.
+- The game continues until all cards are matched.
+- The player’s score is displayed throughout the game, and the game ends once all cards have been matched.
+
+#### Customization:
+
+- The symbols for the cards are defined in the `symbols` array in the `Main.java` file. You can modify the symbols to customize the game.
